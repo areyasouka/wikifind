@@ -1,0 +1,6 @@
+framework module Pods_WikiTransTests {
+  umbrella header "Pods-WikiTransTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

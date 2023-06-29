@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6B5AD0EA6F4111FC9AE899 /* Pods_WikiTransTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */; };
+		CB0DA18F1F6749B9000C92FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */; };
+		CB508C7F1C05F20B00955CCA /* wdsqlite.db in Resources */ = {isa = PBXBuildFile; fileRef = CB508C7E1C05EE6300955CCA /* wdsqlite.db */; };
+		CBBC70421BF079BB00B6E1C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC70411BF079BB00B6E1C4 /* Utils.swift */; };
+		CBC31A0A1BBD33BB00A70C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */; };
+		CBC31A0C1BBD33BB00A70C24 /* WikiResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */; };
+		CBC31A0F1BBD33BB00A70C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */; };
+		CBC31A111BBD33BB00A70C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A101BBD33BB00A70C24 /* Assets.xcassets */; };
+		CBC31A141BBD33BB00A70C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */; };
+		CBC31A1F1BBD33BB00A70C24 /* WikiTransTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */; };
+		CBC31A2A1BBD365000A70C24 /* WikiResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */; };
+		CBC31A2C1BBDF64D00A70C24 /* WikiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */; };
+		CBC31A2E1BC3387900A70C24 /* WikiResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */; };
+		F20694EE9EC38AD69B259184 /* Pods_WikiTrans.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBC31A1B1BBD33BB00A70C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC319FE1BBD33BB00A70C24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC31A051BBD33BB00A70C24;
+			remoteInfo = WikiTrans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTrans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTrans/Pods-WikiTrans.debug.xcconfig"; sourceTree = "<group>"; };
+		2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiTrans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTransTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTransTests/Pods-WikiTransTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTransTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTransTests/Pods-WikiTransTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTrans.release.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTrans/Pods-WikiTrans.release.xcconfig"; sourceTree = "<group>"; };
+		8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiTransTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB508C7E1C05EE6300955CCA /* wdsqlite.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = wdsqlite.db; sourceTree = "<group>"; };
+		CB56F3062735097F00F908B7 /* WikiTrans.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiTrans.entitlements; sourceTree = "<group>"; };
+		CBBC70411BF079BB00B6E1C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CBC31A061BBD33BB00A70C24 /* WikiTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResultViewController.swift; sourceTree = "<group>"; };
+		CBC31A0E1BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBC31A101BBD33BB00A70C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBC31A131BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTransTests.swift; sourceTree = "<group>"; };
+		CBC31A201BBD33BB00A70C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResultTableViewCell.swift; sourceTree = "<group>"; };
+		CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResult.swift; sourceTree = "<group>"; };
+		CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResultTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC31A031BBD33BB00A70C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0DA18F1F6749B9000C92FB /* AVFoundation.framework in Frameworks */,
+				F20694EE9EC38AD69B259184 /* Pods_WikiTrans.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC31A171BBD33BB00A70C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6B5AD0EA6F4111FC9AE899 /* Pods_WikiTransTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC335337806B8C16488112F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */,
+				2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */,
+				8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47B46535C0A889CC9555624D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */,
+				7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */,
+				6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */,
+				4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBBC70561BF086C800B6E1C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB508C7E1C05EE6300955CCA /* wdsqlite.db */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC319FD1BBD33BB00A70C24 = {
+			isa = PBXGroup;
+			children = (
+				CBC31A081BBD33BB00A70C24 /* WikiTrans */,
+				CBC31A1D1BBD33BB00A70C24 /* WikiTransTests */,
+				CBC31A071BBD33BB00A70C24 /* Products */,
+				47B46535C0A889CC9555624D /* Pods */,
+				1EC335337806B8C16488112F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC31A071BBD33BB00A70C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC31A061BBD33BB00A70C24 /* WikiTrans.app */,
+				CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC31A081BBD33BB00A70C24 /* WikiTrans */ = {
+			isa = PBXGroup;
+			children = (
+				CB56F3062735097F00F908B7 /* WikiTrans.entitlements */,
+				CBBC70561BF086C800B6E1C4 /* Supporting Files */,
+				CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */,
+				CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */,
+				CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */,
+				CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */,
+				CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */,
+				CBC31A101BBD33BB00A70C24 /* Assets.xcassets */,
+				CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */,
+				CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */,
+				CBBC70411BF079BB00B6E1C4 /* Utils.swift */,
+			);
+			path = WikiTrans;
+			sourceTree = "<group>";
+		};
+		CBC31A1D1BBD33BB00A70C24 /* WikiTransTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */,
+				CBC31A201BBD33BB00A70C24 /* Info.plist */,
+			);
+			path = WikiTransTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC31A051BBD33BB00A70C24 /* WikiTrans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTrans" */;
+			buildPhases = (
+				4C82B8AE25502D9C4B8C8F00 /* [CP] Check Pods Manifest.lock */,
+				CBC31A021BBD33BB00A70C24 /* Sources */,
+				CBC31A031BBD33BB00A70C24 /* Frameworks */,
+				CBC31A041BBD33BB00A70C24 /* Resources */,
+				33E837D45A2D2F0A6BDFFFA3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiTrans;
+			productName = WikiTrans;
+			productReference = CBC31A061BBD33BB00A70C24 /* WikiTrans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBC31A191BBD33BB00A70C24 /* WikiTransTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTransTests" */;
+			buildPhases = (
+				5C1B74B8AE8B7AA0C5401A3B /* [CP] Check Pods Manifest.lock */,
+				CBC31A161BBD33BB00A70C24 /* Sources */,
+				CBC31A171BBD33BB00A70C24 /* Frameworks */,
+				CBC31A181BBD33BB00A70C24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC31A1C1BBD33BB00A70C24 /* PBXTargetDependency */,
+			);
+			name = WikiTransTests;
+			productName = WikiTransTests;
+			productReference = CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC319FE1BBD33BB00A70C24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = Postmeta;
+				TargetAttributes = {
+					CBC31A051BBD33BB00A70C24 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = GUPW6ULNGB;
+						LastSwiftMigration = 1020;
+					};
+					CBC31A191BBD33BB00A70C24 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = GUPW6ULNGB;
+						LastSwiftMigration = 1020;
+						TestTargetID = CBC31A051BBD33BB00A70C24;
+					};
+				};
+			};
+			buildConfigurationList = CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiTrans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBC319FD1BBD33BB00A70C24;
+			productRefGroup = CBC31A071BBD33BB00A70C24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC31A051BBD33BB00A70C24 /* WikiTrans */,
+				CBC31A191BBD33BB00A70C24 /* WikiTransTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC31A041BBD33BB00A70C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB508C7F1C05F20B00955CCA /* wdsqlite.db in Resources */,
+				CBC31A141BBD33BB00A70C24 /* LaunchScreen.storyboard in Resources */,
+				CBC31A111BBD33BB00A70C24 /* Assets.xcassets in Resources */,
+				CBC31A0F1BBD33BB00A70C24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC31A181BBD33BB00A70C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33E837D45A2D2F0A6BDFFFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiTrans/Pods-WikiTrans-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiTrans/Pods-WikiTrans-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C82B8AE25502D9C4B8C8F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiTrans-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C1B74B8AE8B7AA0C5401A3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiTransTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC31A021BBD33BB00A70C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC31A2E1BC3387900A70C24 /* WikiResultTableViewController.swift in Sources */,
+				CBC31A2A1BBD365000A70C24 /* WikiResultTableViewCell.swift in Sources */,
+				CBC31A0C1BBD33BB00A70C24 /* WikiResultViewController.swift in Sources */,
+				CBC31A2C1BBDF64D00A70C24 /* WikiResult.swift in Sources */,
+				CBC31A0A1BBD33BB00A70C24 /* AppDelegate.swift in Sources */,
+				CBBC70421BF079BB00B6E1C4 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC31A161BBD33BB00A70C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC31A1F1BBD33BB00A70C24 /* WikiTransTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBC31A1C1BBD33BB00A70C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC31A051BBD33BB00A70C24 /* WikiTrans */;
+			targetProxy = CBC31A1B1BBD33BB00A70C24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC31A0E1BBD33BB00A70C24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC31A131BBD33BB00A70C24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBC31A211BBD33BB00A70C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBC31A221BBD33BB00A70C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBC31A241BBD33BB00A70C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WikiTrans/WikiTrans.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = GUPW6ULNGB;
+				INFOPLIST_FILE = WikiTrans/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WikiTrans Dictionary";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.3;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikitrans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiTrans/WikiTrans-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		CBC31A251BBD33BB00A70C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WikiTrans/WikiTrans.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = GUPW6ULNGB;
+				INFOPLIST_FILE = WikiTrans/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WikiTrans Dictionary";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikitrans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiTrans/WikiTrans-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		CBC31A271BBD33BB00A70C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GUPW6ULNGB;
+				INFOPLIST_FILE = WikiTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiTransTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiTrans.app/WikiTrans";
+			};
+			name = Debug;
+		};
+		CBC31A281BBD33BB00A70C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GUPW6ULNGB;
+				INFOPLIST_FILE = WikiTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiTransTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiTrans.app/WikiTrans";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC31A211BBD33BB00A70C24 /* Debug */,
+				CBC31A221BBD33BB00A70C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC31A241BBD33BB00A70C24 /* Debug */,
+				CBC31A251BBD33BB00A70C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTransTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC31A271BBD33BB00A70C24 /* Debug */,
+				CBC31A281BBD33BB00A70C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC319FE1BBD33BB00A70C24 /* Project object */;
+}

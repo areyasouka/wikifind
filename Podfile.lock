@@ -1,0 +1,26 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.7.1)
+  - FontAwesome.swift (1.9.1)
+  - GRDB.swift (6.15.1):
+    - GRDB.swift/standard (= 6.15.1)
+  - GRDB.swift/standard (6.15.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - FontAwesome.swift
+  - GRDB.swift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
+    - FontAwesome.swift
+    - GRDB.swift
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  GRDB.swift: a6b7e9900aa300d0cbf1f1c5f47b8f32ae51e30c
+
+PODFILE CHECKSUM: 80069363866aff0211615da7dd9ca6dcd0f54b30
+
+COCOAPODS: 1.12.0
