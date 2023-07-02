@@ -21,7 +21,7 @@ time pigz -dc $wikidata_all | gsplit - -l $lines_per_part --filter='pigz > $FILE
 pids=""
 RESULT=0
 for file in $(find $data_path -type f -name "*$wikidata_part_substr*"); do
-    time $python ./util/extractwikitrans.py $file $file$term_out_suffix & 
+    time $python ./util/extractwikifind.py $file $file$term_out_suffix & 
     pids="$pids $!"
 done
 # wait $pids

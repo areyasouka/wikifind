@@ -169,12 +169,8 @@ class WikiResultTableViewController: UITableViewController, UISearchControllerDe
         self.resultSearchController.searchBar.showsCancelButton = false // TODO doesnt work bug
         self.resultSearchController.searchBar.showsScopeBar = true
         self.resultSearchController.delegate = self
-        if #available(iOS 11.0, *) {
-            navigationController?.navigationBar.prefersLargeTitles = false
-            self.navigationItem.searchController = self.resultSearchController
-        } else {
-            self.tableView.tableHeaderView = self.resultSearchController.searchBar
-        }
+        navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.searchController = self.resultSearchController
         
         let progressHUD = ProgressHUD(text: "Building index\n(~1 min)")
         self.view.addSubview(progressHUD)

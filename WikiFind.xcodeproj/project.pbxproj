@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C6B5AD0EA6F4111FC9AE899 /* Pods_WikiTransTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */; };
+		7F335A9E390F6424610A9D58 /* Pods_WikiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5339125BF4CAFA30594679 /* Pods_WikiFind.framework */; };
 		CB0DA18F1F6749B9000C92FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */; };
 		CB508C7F1C05F20B00955CCA /* wdsqlite.db in Resources */ = {isa = PBXBuildFile; fileRef = CB508C7E1C05EE6300955CCA /* wdsqlite.db */; };
 		CBBC70421BF079BB00B6E1C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC70411BF079BB00B6E1C4 /* Utils.swift */; };
@@ -16,11 +16,11 @@
 		CBC31A0F1BBD33BB00A70C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */; };
 		CBC31A111BBD33BB00A70C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A101BBD33BB00A70C24 /* Assets.xcassets */; };
 		CBC31A141BBD33BB00A70C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */; };
-		CBC31A1F1BBD33BB00A70C24 /* WikiTransTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */; };
+		CBC31A1F1BBD33BB00A70C24 /* WikiFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A1E1BBD33BB00A70C24 /* WikiFindTests.swift */; };
 		CBC31A2A1BBD365000A70C24 /* WikiResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */; };
 		CBC31A2C1BBDF64D00A70C24 /* WikiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */; };
 		CBC31A2E1BC3387900A70C24 /* WikiResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */; };
-		F20694EE9EC38AD69B259184 /* Pods_WikiTrans.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */; };
+		FF4F2D3B56A8BB62583CB756 /* Pods_WikiFindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30167411FDEE749211A63945 /* Pods_WikiFindTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,33 +29,33 @@
 			containerPortal = CBC319FE1BBD33BB00A70C24 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CBC31A051BBD33BB00A70C24;
-			remoteInfo = WikiTrans;
+			remoteInfo = WikiFind;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTrans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTrans/Pods-WikiTrans.debug.xcconfig"; sourceTree = "<group>"; };
-		2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiTrans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTransTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTransTests/Pods-WikiTransTests.release.xcconfig"; sourceTree = "<group>"; };
-		6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTransTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTransTests/Pods-WikiTransTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiTrans.release.xcconfig"; path = "Pods/Target Support Files/Pods-WikiTrans/Pods-WikiTrans.release.xcconfig"; sourceTree = "<group>"; };
-		8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiTransTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		038815D169FE8E8380F1B01A /* Pods-WikiFindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiFindTests.debug.xcconfig"; path = "Target Support Files/Pods-WikiFindTests/Pods-WikiFindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30167411FDEE749211A63945 /* Pods_WikiFindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiFindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC63E3CB3A6918B6978603B /* Pods-WikiFindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiFindTests.release.xcconfig"; path = "Target Support Files/Pods-WikiFindTests/Pods-WikiFindTests.release.xcconfig"; sourceTree = "<group>"; };
+		9ACC2F829434B913C590CADD /* Pods-WikiFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiFind.debug.xcconfig"; path = "Target Support Files/Pods-WikiFind/Pods-WikiFind.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5339125BF4CAFA30594679 /* Pods_WikiFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB508C7E1C05EE6300955CCA /* wdsqlite.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = wdsqlite.db; sourceTree = "<group>"; };
-		CB56F3062735097F00F908B7 /* WikiTrans.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiTrans.entitlements; sourceTree = "<group>"; };
+		CB56F3062735097F00F908B7 /* WikiFind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiFind.entitlements; sourceTree = "<group>"; };
 		CBBC70411BF079BB00B6E1C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		CBC31A061BBD33BB00A70C24 /* WikiTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC31A061BBD33BB00A70C24 /* WikiFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResultViewController.swift; sourceTree = "<group>"; };
 		CBC31A0E1BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBC31A101BBD33BB00A70C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC31A131BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTransTests.swift; sourceTree = "<group>"; };
+		CBC31A1A1BBD33BB00A70C24 /* WikiFindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiFindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC31A1E1BBD33BB00A70C24 /* WikiFindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiFindTests.swift; sourceTree = "<group>"; };
 		CBC31A201BBD33BB00A70C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResultTableViewCell.swift; sourceTree = "<group>"; };
 		CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResult.swift; sourceTree = "<group>"; };
 		CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResultTableViewController.swift; sourceTree = "<group>"; };
+		FE8F5E8CAF6063D0F3E7BACC /* Pods-WikiFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiFind.release.xcconfig"; path = "Target Support Files/Pods-WikiFind/Pods-WikiFind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0DA18F1F6749B9000C92FB /* AVFoundation.framework in Frameworks */,
-				F20694EE9EC38AD69B259184 /* Pods_WikiTrans.framework in Frameworks */,
+				7F335A9E390F6424610A9D58 /* Pods_WikiFind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6B5AD0EA6F4111FC9AE899 /* Pods_WikiTransTests.framework in Frameworks */,
+				FF4F2D3B56A8BB62583CB756 /* Pods_WikiFindTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,21 +83,21 @@
 			isa = PBXGroup;
 			children = (
 				CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */,
-				2CBFD67B03D5BB292092461E /* Pods_WikiTrans.framework */,
-				8F5DE91E73AF4C3ED66D774D /* Pods_WikiTransTests.framework */,
+				AA5339125BF4CAFA30594679 /* Pods_WikiFind.framework */,
+				30167411FDEE749211A63945 /* Pods_WikiFindTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47B46535C0A889CC9555624D /* Pods */ = {
+		A19FF25B3E829DD40051C83E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */,
-				7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */,
-				6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */,
-				4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */,
+				9ACC2F829434B913C590CADD /* Pods-WikiFind.debug.xcconfig */,
+				FE8F5E8CAF6063D0F3E7BACC /* Pods-WikiFind.release.xcconfig */,
+				038815D169FE8E8380F1B01A /* Pods-WikiFindTests.debug.xcconfig */,
+				4EC63E3CB3A6918B6978603B /* Pods-WikiFindTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CBBC70561BF086C800B6E1C4 /* Supporting Files */ = {
@@ -111,27 +111,27 @@
 		CBC319FD1BBD33BB00A70C24 = {
 			isa = PBXGroup;
 			children = (
-				CBC31A081BBD33BB00A70C24 /* WikiTrans */,
-				CBC31A1D1BBD33BB00A70C24 /* WikiTransTests */,
+				CBC31A081BBD33BB00A70C24 /* WikiFind */,
+				CBC31A1D1BBD33BB00A70C24 /* WikiFindTests */,
 				CBC31A071BBD33BB00A70C24 /* Products */,
-				47B46535C0A889CC9555624D /* Pods */,
 				1EC335337806B8C16488112F /* Frameworks */,
+				A19FF25B3E829DD40051C83E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		CBC31A071BBD33BB00A70C24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBC31A061BBD33BB00A70C24 /* WikiTrans.app */,
-				CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */,
+				CBC31A061BBD33BB00A70C24 /* WikiFind.app */,
+				CBC31A1A1BBD33BB00A70C24 /* WikiFindTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBC31A081BBD33BB00A70C24 /* WikiTrans */ = {
+		CBC31A081BBD33BB00A70C24 /* WikiFind */ = {
 			isa = PBXGroup;
 			children = (
-				CB56F3062735097F00F908B7 /* WikiTrans.entitlements */,
+				CB56F3062735097F00F908B7 /* WikiFind.entitlements */,
 				CBBC70561BF086C800B6E1C4 /* Supporting Files */,
 				CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */,
 				CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */,
@@ -143,45 +143,45 @@
 				CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */,
 				CBBC70411BF079BB00B6E1C4 /* Utils.swift */,
 			);
-			path = WikiTrans;
+			path = WikiFind;
 			sourceTree = "<group>";
 		};
-		CBC31A1D1BBD33BB00A70C24 /* WikiTransTests */ = {
+		CBC31A1D1BBD33BB00A70C24 /* WikiFindTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBC31A1E1BBD33BB00A70C24 /* WikiTransTests.swift */,
+				CBC31A1E1BBD33BB00A70C24 /* WikiFindTests.swift */,
 				CBC31A201BBD33BB00A70C24 /* Info.plist */,
 			);
-			path = WikiTransTests;
+			path = WikiFindTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBC31A051BBD33BB00A70C24 /* WikiTrans */ = {
+		CBC31A051BBD33BB00A70C24 /* WikiFind */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTrans" */;
+			buildConfigurationList = CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiFind" */;
 			buildPhases = (
-				4C82B8AE25502D9C4B8C8F00 /* [CP] Check Pods Manifest.lock */,
+				27A14CA8E94F680D3B4732DE /* [CP] Check Pods Manifest.lock */,
 				CBC31A021BBD33BB00A70C24 /* Sources */,
 				CBC31A031BBD33BB00A70C24 /* Frameworks */,
 				CBC31A041BBD33BB00A70C24 /* Resources */,
-				33E837D45A2D2F0A6BDFFFA3 /* [CP] Embed Pods Frameworks */,
+				EFF95B20C031D669AAA9D644 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WikiTrans;
-			productName = WikiTrans;
-			productReference = CBC31A061BBD33BB00A70C24 /* WikiTrans.app */;
+			name = WikiFind;
+			productName = WikiFind;
+			productReference = CBC31A061BBD33BB00A70C24 /* WikiFind.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBC31A191BBD33BB00A70C24 /* WikiTransTests */ = {
+		CBC31A191BBD33BB00A70C24 /* WikiFindTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTransTests" */;
+			buildConfigurationList = CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiFindTests" */;
 			buildPhases = (
-				5C1B74B8AE8B7AA0C5401A3B /* [CP] Check Pods Manifest.lock */,
+				4C16CFA601A1EE33007008F4 /* [CP] Check Pods Manifest.lock */,
 				CBC31A161BBD33BB00A70C24 /* Sources */,
 				CBC31A171BBD33BB00A70C24 /* Frameworks */,
 				CBC31A181BBD33BB00A70C24 /* Resources */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				CBC31A1C1BBD33BB00A70C24 /* PBXTargetDependency */,
 			);
-			name = WikiTransTests;
-			productName = WikiTransTests;
-			productReference = CBC31A1A1BBD33BB00A70C24 /* WikiTransTests.xctest */;
+			name = WikiFindTests;
+			productName = WikiFindTests;
+			productReference = CBC31A1A1BBD33BB00A70C24 /* WikiFindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,6 @@
 				TargetAttributes = {
 					CBC31A051BBD33BB00A70C24 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = GUPW6ULNGB;
 						LastSwiftMigration = 1020;
 					};
 					CBC31A191BBD33BB00A70C24 = {
@@ -220,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiTrans" */;
+			buildConfigurationList = CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiFind" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBC31A051BBD33BB00A70C24 /* WikiTrans */,
-				CBC31A191BBD33BB00A70C24 /* WikiTransTests */,
+				CBC31A051BBD33BB00A70C24 /* WikiFind */,
+				CBC31A191BBD33BB00A70C24 /* WikiFindTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,13 +260,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33E837D45A2D2F0A6BDFFFA3 /* [CP] Embed Pods Frameworks */ = {
+		27A14CA8E94F680D3B4732DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiFind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C16CFA601A1EE33007008F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiFindTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF95B20C031D669AAA9D644 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WikiTrans/Pods-WikiTrans-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WikiFind/Pods-WikiFind-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
@@ -280,43 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiTrans/Pods-WikiTrans-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C82B8AE25502D9C4B8C8F00 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WikiTrans-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C1B74B8AE8B7AA0C5401A3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WikiTransTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiFind/Pods-WikiFind-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -339,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC31A1F1BBD33BB00A70C24 /* WikiTransTests.swift in Sources */,
+				CBC31A1F1BBD33BB00A70C24 /* WikiFindTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +355,7 @@
 /* Begin PBXTargetDependency section */
 		CBC31A1C1BBD33BB00A70C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBC31A051BBD33BB00A70C24 /* WikiTrans */;
+			target = CBC31A051BBD33BB00A70C24 /* WikiFind */;
 			targetProxy = CBC31A1B1BBD33BB00A70C24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -486,17 +493,17 @@
 		};
 		CBC31A241BBD33BB00A70C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05D368553270EAE35DA861D6 /* Pods-WikiTrans.debug.xcconfig */;
+			baseConfigurationReference = 9ACC2F829434B913C590CADD /* Pods-WikiFind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WikiTrans/WikiTrans.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WikiFind/WikiFind.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 63;
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
-				INFOPLIST_FILE = WikiTrans/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "WikiTrans Dictionary";
+				INFOPLIST_FILE = WikiFind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WikiFind Dictionary";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,12 +511,12 @@
 				);
 				MARKETING_VERSION = 1.2.3;
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikitrans;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikifind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WikiTrans/WikiTrans-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiFind/WikiFind-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
@@ -519,29 +526,29 @@
 		};
 		CBC31A251BBD33BB00A70C24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C016AB289ACB93C239232B7 /* Pods-WikiTrans.release.xcconfig */;
+			baseConfigurationReference = FE8F5E8CAF6063D0F3E7BACC /* Pods-WikiFind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = WikiTrans/WikiTrans.entitlements;
+				CODE_SIGN_ENTITLEMENTS = WikiFind/WikiFind.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 63;
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
-				INFOPLIST_FILE = WikiTrans/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "WikiTrans Dictionary";
+				INFOPLIST_FILE = WikiFind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WikiFind Dictionary";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikitrans;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikifind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WikiTrans/WikiTrans-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WikiFind/WikiFind-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_WORKSPACE = YES;
@@ -550,46 +557,46 @@
 		};
 		CBC31A271BBD33BB00A70C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AAC16B97268AAA23CE453C4 /* Pods-WikiTransTests.debug.xcconfig */;
+			baseConfigurationReference = 038815D169FE8E8380F1B01A /* Pods-WikiFindTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
-				INFOPLIST_FILE = WikiTransTests/Info.plist;
+				INFOPLIST_FILE = WikiFindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiTransTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiFindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiTrans.app/WikiTrans";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiFind.app/WikiFind";
 			};
 			name = Debug;
 		};
 		CBC31A281BBD33BB00A70C24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DBDAF0FBFB9E18CB0C9FDEA /* Pods-WikiTransTests.release.xcconfig */;
+			baseConfigurationReference = 4EC63E3CB3A6918B6978603B /* Pods-WikiFindTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
-				INFOPLIST_FILE = WikiTransTests/Info.plist;
+				INFOPLIST_FILE = WikiFindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiTransTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.WikiFindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiTrans.app/WikiTrans";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikiFind.app/WikiFind";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiTrans" */ = {
+		CBC31A011BBD33BB00A70C24 /* Build configuration list for PBXProject "WikiFind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBC31A211BBD33BB00A70C24 /* Debug */,
@@ -598,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTrans" */ = {
+		CBC31A231BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiFind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBC31A241BBD33BB00A70C24 /* Debug */,
@@ -607,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiTransTests" */ = {
+		CBC31A261BBD33BB00A70C24 /* Build configuration list for PBXNativeTarget "WikiFindTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBC31A271BBD33BB00A70C24 /* Debug */,

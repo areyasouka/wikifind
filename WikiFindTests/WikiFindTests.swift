@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import WikiTrans
+@testable import WikiFind
 
-class WikiTransTests: XCTestCase {
+class WikiFindTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

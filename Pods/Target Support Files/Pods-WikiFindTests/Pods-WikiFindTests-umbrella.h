@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_WikiTransVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_WikiTransVersionString[];
+FOUNDATION_EXPORT double Pods_WikiFindTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WikiFindTestsVersionString[];
 

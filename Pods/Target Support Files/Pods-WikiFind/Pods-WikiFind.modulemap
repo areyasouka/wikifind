@@ -1,0 +1,6 @@
+framework module Pods_WikiFind {
+  umbrella header "Pods-WikiFind-umbrella.h"
+
+  export *
+  module * { export * }
+}

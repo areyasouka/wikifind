@@ -1,4 +1,4 @@
-# WikiTrans Dictionary - Bilingual Wikipedia Search
+# WikiFind Dictionary - Bilingual Wikipedia Search
 
 Fast auto-complete style dictionary translation for English, Japanese, Chinese, Korean, French, Spanish and German.
 
@@ -11,7 +11,7 @@ Fast auto-complete style dictionary translation for English, Japanese, Chinese, 
 - Compare both Wikipedia pages on one screen
 - Over 11.7million+ words and phrases
   
-<img src="https://raw.githubusercontent.com/areyasouka/wikitrans/main/docs/screenshot.png" alt="Screenshot showing iPhone WikiTrans App" title="iPhone WikiTrans App screenshot" width="640">
+<img src="https://raw.githubusercontent.com/areyasouka/wikifind/main/docs/screenshot.png" alt="Screenshot showing iPhone WikiFind App" title="iPhone WikiFind App screenshot" width="640">
 
 ### Dependencies
 

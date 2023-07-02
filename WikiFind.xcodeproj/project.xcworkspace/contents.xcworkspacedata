@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WikiTrans.xcodeproj">
+      location = "self:/Users/schonfal/Source/wikitrans/WikiFind.xcodeproj">
    </FileRef>
 </Workspace>

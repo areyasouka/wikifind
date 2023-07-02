@@ -1,7 +1,7 @@
 # pip3.9 install qwikidata regex ujson
 # pip_pypy3 install qwikidata regex ujson
 # /usr/local/Cellar/python@3.9/3.9.7_1/bin/python3 -m pip install ujson qwikidata regex
-# pypy3 util/extractwikitrans.py data/test-100.json.gz data/wikidata_term.tsv.gz
+# pypy3 util/extractwikifind.py data/test-100.json.gz data/wikidata_term.tsv.gz
 
 # vi /usr/local/lib/python3.9/site-packages/qwikidata/json_dump.py
 # vi /opt/homebrew/lib/python3.9/site-packages/qwikidata/json_dump.py
