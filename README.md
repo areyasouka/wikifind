@@ -37,5 +37,6 @@ wget https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz -P ./d
 
 ## TODO
 
+- update DB_VERSION during build
 - automate database build, dump to s3
 

@@ -42,7 +42,7 @@ class WikiResultTableViewController: UITableViewController, UISearchControllerDe
     static let MIN_ENTITY_RESULTS_FOR_RETRY = 10
     static let MAX_DISPLAY_RESULTS = 20
     static let MAX_SCOPE_CHOICES = 6
-    static let DB_VERSION = 20221216 // TODO: UPDATE DURING BUILD!
+    static let DB_VERSION = 20230703 // TODO: UPDATE DURING BUILD!
     
     var searchResults: SynchronizedArray<WikiResult>!
     

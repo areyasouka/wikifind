@@ -5,6 +5,7 @@ python=python3.9
 # sqlite=/usr/local/Cellar/sqlite/3.36.0/bin/sqlite3
 sqlite=/usr/bin/sqlite3
 data_path=./data
+# data_path=/Volumes/Data/wikitrans/data
 # wikidata_all=$data_path/test-100.json.gz
 wikidata_all=$data_path/latest-all.json.gz
 # lines_per_part=25
