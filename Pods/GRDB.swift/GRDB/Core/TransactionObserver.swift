@@ -20,8 +20,8 @@ extension Database {
         
         // Drop cached statements that delete, because the addition of an
         // observer may change the need for truncate optimization prevention.
-        publicStatementCache.removeAll { $0.isDeleteStatement }
-        internalStatementCache.removeAll { $0.isDeleteStatement }
+        publicStatementCache.removeAll { $0.canDeleteRows }
+        internalStatementCache.removeAll { $0.canDeleteRows }
         
         observationBroker.add(transactionObserver: transactionObserver, extent: extent)
     }
@@ -33,8 +33,8 @@ extension Database {
         
         // Drop cached statements that delete, because the removal of an
         // observer may change the need for truncate optimization prevention.
-        publicStatementCache.removeAll { $0.isDeleteStatement }
-        internalStatementCache.removeAll { $0.isDeleteStatement }
+        publicStatementCache.removeAll { $0.canDeleteRows }
+        internalStatementCache.removeAll { $0.canDeleteRows }
         
         observationBroker.remove(transactionObserver: transactionObserver)
     }
@@ -778,7 +778,8 @@ public protocol TransactionObserver: AnyObject {
     /// - note: The event is only valid for the duration of this method call.
     ///   If you need to keep it longer, store a copy: `event.copy()`.
     ///
-    /// - precondition: This method must not access the database.
+    /// - precondition: This method must not access the observed writer
+    ///   database connection.
     func databaseDidChange(with event: DatabaseEvent)
     
     /// Called when a transaction is about to be committed.
@@ -786,7 +787,8 @@ public protocol TransactionObserver: AnyObject {
     /// The transaction observer has an opportunity to rollback pending changes
     /// by throwing an error from this method.
     ///
-    /// - precondition: This method must not access the database.
+    /// - precondition: This method must not access the observed writer
+    ///   database connection.
     /// - throws: The eventual error that rollbacks pending changes.
     func databaseWillCommit() throws
     
@@ -1093,7 +1095,12 @@ public struct DatabaseEvent {
         self.impl = impl
     }
     
-    init(kind: Kind, rowID: Int64, databaseNameCString: UnsafePointer<Int8>?, tableNameCString: UnsafePointer<Int8>?) {
+    init(
+        kind: Kind,
+        rowID: Int64,
+        databaseNameCString: UnsafePointer<CChar>?,
+        tableNameCString: UnsafePointer<CChar>?)
+    {
         self.init(
             kind: kind,
             rowID: rowID,
@@ -1129,8 +1136,8 @@ private protocol DatabaseEventImpl {
 /// Optimization: MetalDatabaseEventImpl does not create Swift strings from raw
 /// SQLite char* until actually asked for databaseName or tableName.
 private struct MetalDatabaseEventImpl: DatabaseEventImpl {
-    let databaseNameCString: UnsafePointer<Int8>?
-    let tableNameCString: UnsafePointer<Int8>?
+    let databaseNameCString: UnsafePointer<CChar>?
+    let tableNameCString: UnsafePointer<CChar>?
     
     var databaseName: String { String(cString: databaseNameCString!) }
     var tableName: String { String(cString: tableNameCString!) }
@@ -1265,8 +1272,8 @@ public struct DatabasePreUpdateEvent {
         kind: Kind,
         initialRowID: Int64,
         finalRowID: Int64,
-        databaseNameCString: UnsafePointer<Int8>?,
-        tableNameCString: UnsafePointer<Int8>?)
+        databaseNameCString: UnsafePointer<CChar>?,
+        tableNameCString: UnsafePointer<CChar>?)
     {
         self.init(
             kind: kind,
@@ -1322,8 +1329,8 @@ private struct MetalDatabasePreUpdateEventImpl: DatabasePreUpdateEventImpl {
     let connection: SQLiteConnection
     let kind: DatabasePreUpdateEvent.Kind
     
-    let databaseNameCString: UnsafePointer<Int8>?
-    let tableNameCString: UnsafePointer<Int8>?
+    let databaseNameCString: UnsafePointer<CChar>?
+    let tableNameCString: UnsafePointer<CChar>?
     
     var databaseName: String { String(cString: databaseNameCString!) }
     var tableName: String { String(cString: tableNameCString!) }

@@ -7,15 +7,15 @@ import UIKit
 public final class DatabaseQueue {
     private let writer: SerializedDatabase
     
+    /// If Database Suspension is enabled, this array contains the necessary `NotificationCenter` observers.
+    private var suspensionObservers: [NSObjectProtocol] = []
+    
     // MARK: - Configuration
     
     public var configuration: Configuration {
         writer.configuration
     }
     
-    /// The path to the database file.
-    ///
-    /// The path is `:memory:` for in-memory databases.
     public var path: String {
         writer.path
     }
@@ -46,6 +46,18 @@ public final class DatabaseQueue {
             path: path,
             configuration: configuration,
             defaultLabel: "GRDB.DatabaseQueue")
+        
+        // Set up journal mode unless readonly
+        if !configuration.readonly {
+            switch configuration.journalMode {
+            case .default:
+                break
+            case .wal:
+                try writer.sync {
+                    try $0.setUpWALMode()
+                }
+            }
+        }
         
         setupSuspension()
         
@@ -100,6 +112,9 @@ public final class DatabaseQueue {
     }
     
     deinit {
+        // Remove block-based Notification observers.
+        suspensionObservers.forEach(NotificationCenter.default.removeObserver(_:))
+        
         // Undo job done in setupMemoryManagement()
         //
         // https://developer.apple.com/library/mac/releasenotes/Foundation/RN-Foundation/index.html#10_11Error
@@ -107,6 +122,9 @@ public final class DatabaseQueue {
         NotificationCenter.default.removeObserver(self)
     }
 }
+
+// @unchecked because of suspensionObservers
+extension DatabaseQueue: @unchecked Sendable { }
 
 extension DatabaseQueue {
     
@@ -189,27 +207,19 @@ extension DatabaseQueue: DatabaseReader {
     private func setupSuspension() {
         if configuration.observesSuspensionNotifications {
             let center = NotificationCenter.default
-            center.addObserver(
-                self,
-                selector: #selector(DatabaseQueue.suspend(_:)),
-                name: Database.suspendNotification,
-                object: nil)
-            center.addObserver(
-                self,
-                selector: #selector(DatabaseQueue.resume(_:)),
-                name: Database.resumeNotification,
-                object: nil)
+            suspensionObservers.append(center.addObserver(
+                forName: Database.suspendNotification,
+                object: nil,
+                queue: nil,
+                using: { [weak self] _ in self?.suspend() }
+            ))
+            suspensionObservers.append(center.addObserver(
+                forName: Database.resumeNotification,
+                object: nil,
+                queue: nil,
+                using: { [weak self] _ in self?.resume() }
+            ))
         }
-    }
-    
-    @objc
-    private func suspend(_ notification: Notification) {
-        suspend()
-    }
-    
-    @objc
-    private func resume(_ notification: Notification) {
-        resume()
     }
     
     // MARK: - Reading from Database

@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7F335A9E390F6424610A9D58 /* Pods_WikiFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5339125BF4CAFA30594679 /* Pods_WikiFind.framework */; };
 		CB0DA18F1F6749B9000C92FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */; };
 		CB508C7F1C05F20B00955CCA /* wdsqlite.db in Resources */ = {isa = PBXBuildFile; fileRef = CB508C7E1C05EE6300955CCA /* wdsqlite.db */; };
+		CB5816FE2ACE28B300306710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5816FD2ACE28B300306710 /* Assets.xcassets */; };
 		CBBC70421BF079BB00B6E1C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC70411BF079BB00B6E1C4 /* Utils.swift */; };
 		CBC31A0A1BBD33BB00A70C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */; };
 		CBC31A0C1BBD33BB00A70C24 /* WikiResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */; };
 		CBC31A0F1BBD33BB00A70C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */; };
-		CBC31A111BBD33BB00A70C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A101BBD33BB00A70C24 /* Assets.xcassets */; };
 		CBC31A141BBD33BB00A70C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */; };
 		CBC31A1F1BBD33BB00A70C24 /* WikiFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A1E1BBD33BB00A70C24 /* WikiFindTests.swift */; };
 		CBC31A2A1BBD365000A70C24 /* WikiResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */; };
@@ -42,12 +42,12 @@
 		CB0DA18E1F6749B9000C92FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB508C7E1C05EE6300955CCA /* wdsqlite.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = wdsqlite.db; sourceTree = "<group>"; };
 		CB56F3062735097F00F908B7 /* WikiFind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiFind.entitlements; sourceTree = "<group>"; };
+		CB5816FD2ACE28B300306710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBBC70411BF079BB00B6E1C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CBC31A061BBD33BB00A70C24 /* WikiFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC31A091BBD33BB00A70C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC31A0B1BBD33BB00A70C24 /* WikiResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResultViewController.swift; sourceTree = "<group>"; };
 		CBC31A0E1BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CBC31A101BBD33BB00A70C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC31A131BBD33BB00A70C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBC31A1A1BBD33BB00A70C24 /* WikiFindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiFindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC31A1E1BBD33BB00A70C24 /* WikiFindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiFindTests.swift; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 				CBC31A0D1BBD33BB00A70C24 /* Main.storyboard */,
 				CBC31A291BBD365000A70C24 /* WikiResultTableViewCell.swift */,
 				CBC31A2D1BC3387900A70C24 /* WikiResultTableViewController.swift */,
-				CBC31A101BBD33BB00A70C24 /* Assets.xcassets */,
 				CBC31A121BBD33BB00A70C24 /* LaunchScreen.storyboard */,
 				CBC31A2B1BBDF64D00A70C24 /* WikiResult.swift */,
 				CBBC70411BF079BB00B6E1C4 /* Utils.swift */,
+				CB5816FD2ACE28B300306710 /* Assets.xcassets */,
 			);
 			path = WikiFind;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = Postmeta;
 				TargetAttributes = {
 					CBC31A051BBD33BB00A70C24 = {
@@ -243,9 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5816FE2ACE28B300306710 /* Assets.xcassets in Resources */,
 				CB508C7F1C05F20B00955CCA /* wdsqlite.db in Resources */,
 				CBC31A141BBD33BB00A70C24 /* LaunchScreen.storyboard in Resources */,
-				CBC31A111BBD33BB00A70C24 /* Assets.xcassets in Resources */,
 				CBC31A0F1BBD33BB00A70C24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,7 +500,7 @@
 				CODE_SIGN_ENTITLEMENTS = WikiFind/WikiFind.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 64;
+				CURRENT_PROJECT_VERSION = 65;
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
 				INFOPLIST_FILE = WikiFind/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "WikiFind Dictionary";
@@ -509,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikifind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,7 +533,7 @@
 				CODE_SIGN_ENTITLEMENTS = WikiFind/WikiFind.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 64;
+				CURRENT_PROJECT_VERSION = 65;
 				DEVELOPMENT_TEAM = GUPW6ULNGB;
 				INFOPLIST_FILE = WikiFind/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "WikiFind Dictionary";
@@ -542,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.postmeta.wikifind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
