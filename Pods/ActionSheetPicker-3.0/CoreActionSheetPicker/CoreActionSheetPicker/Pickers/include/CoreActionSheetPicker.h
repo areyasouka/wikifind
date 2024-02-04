@@ -25,6 +25,16 @@
 //SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#import <UIKit/UIKit.h>
+
+//! Project version number for CoreActionSheetPicker.
+FOUNDATION_EXPORT double CoreActionSheetPickerVersionNumber;
+
+//! Project version string for CoreActionSheetPicker.
+FOUNDATION_EXPORT const unsigned char CoreActionSheetPickerVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import PublicHeader.h
+
 #import "ActionSheetCustomPickerDelegate.h"
 #import "AbstractActionSheetPicker.h"
 #import "ActionSheetCustomPicker.h"
@@ -33,3 +43,4 @@
 #import "ActionSheetLocalePicker.h"
 #import "ActionSheetStringPicker.h"
 #import "ActionSheetMultipleStringPicker.h"
+#import "SWActionSheet.h"

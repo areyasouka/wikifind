@@ -373,20 +373,64 @@ extension Database {
     
     /// The `JSON_GROUP_ARRAY` SQL function.
     ///
+    /// For example:
+    ///
+    /// ```swift
+    /// // SELECT JSON_GROUP_ARRAY(name) FROM player
+    /// Player.select(Database.jsonGroupArray(Column("name")))
+    ///
+    /// // SELECT JSON_GROUP_ARRAY(name) FILTER (WHERE score > 0) FROM player
+    /// Player.select(Database.jsonGroupArray(Column("name"), filter: Column("score") > 0))
+    ///
+    /// // SELECT JSON_GROUP_ARRAY(name ORDER BY name) FROM player
+    /// Player.select(Database.jsonGroupArray(Column("name"), orderBy: Column("name")))
+    /// ```
+    ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jgrouparray>
-    public static func jsonGroupArray(_ value: some SQLExpressible) -> SQLExpression {
-        .function("JSON_GROUP_ARRAY", [value.sqlExpression.jsonBuilderExpression])
+    public static func jsonGroupArray(
+        _ value: some SQLExpressible,
+        orderBy ordering: (any SQLOrderingTerm)? = nil,
+        filter: (any SQLSpecificExpressible)? = nil)
+    -> SQLExpression {
+        .aggregateFunction(
+            "JSON_GROUP_ARRAY",
+            [value.sqlExpression.jsonBuilderExpression],
+            ordering: ordering?.sqlOrdering,
+            filter: filter?.sqlExpression,
+            isJSONValue: true)
     }
     
     /// The `JSON_GROUP_OBJECT` SQL function.
     ///
+    /// For example:
+    ///
+    /// ```swift
+    /// // SELECT JSON_GROUP_OBJECT(name, score) FROM player
+    /// Player.select(Database.jsonGroupObject(
+    ///     key: Column("name"),
+    ///     value: Column("score")))
+    ///
+    /// // SELECT JSON_GROUP_OBJECT(name, score) FILTER (WHERE score > 0) FROM player
+    /// Player.select(Database.jsonGroupObject(
+    ///     key: Column("name"),
+    ///     value: Column("score"),
+    ///     filter: Column("score") > 0))
+    /// ```
+    ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jgrouparray>
-    public static func jsonGroupObject(key: some SQLExpressible, value: some SQLExpressible) -> SQLExpression {
-        .function("JSON_GROUP_OBJECT", [key.sqlExpression, value.sqlExpression.jsonBuilderExpression])
+    public static func jsonGroupObject(
+        key: some SQLExpressible,
+        value: some SQLExpressible,
+        filter: (any SQLSpecificExpressible)? = nil
+    ) -> SQLExpression {
+        .aggregateFunction(
+            "JSON_GROUP_OBJECT",
+            [key.sqlExpression, value.sqlExpression.jsonBuilderExpression],
+            filter: filter?.sqlExpression,
+            isJSONValue: true)
     }
 }
 #else
-@available(iOS 16, macOS 13.2, tvOS 17, watchOS 9, *) // SQLite 3.38+
 extension Database {
     /// Validates and minifies a JSON string, with the `JSON` SQL function.
     ///
@@ -398,6 +442,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jmini>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func json(_ value: some SQLExpressible) -> SQLExpression {
         .function("JSON", [value.sqlExpression])
     }
@@ -412,6 +457,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jarray>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonArray<C>(_ values: C) -> SQLExpression
     where C: Collection, C.Element: SQLExpressible
     {
@@ -428,6 +474,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jarray>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonArray<C>(_ values: C) -> SQLExpression
     where C: Collection, C.Element == any SQLExpressible
     {
@@ -445,6 +492,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jarraylen>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonArrayLength(_ value: some SQLExpressible) -> SQLExpression {
         .function("JSON_ARRAY_LENGTH", [value.sqlExpression])
     }
@@ -464,6 +512,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON array.
     ///   - path: A [JSON path](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonArrayLength(
         _ value: some SQLExpressible,
         atPath path: some SQLExpressible)
@@ -501,6 +550,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON value.
     ///   - path: A [JSON path](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonExtract(_ value: some SQLExpressible, atPath path: some SQLExpressible) -> SQLExpression {
         .function("JSON_EXTRACT", [value.sqlExpression, path.sqlExpression])
     }
@@ -519,6 +569,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON value.
     ///   - paths: A collection of [JSON paths](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonExtract<C>(_ value: some SQLExpressible, atPaths paths: C)
     -> SQLExpression
     where C: Collection, C.Element: SQLExpressible
@@ -541,6 +592,7 @@ extension Database {
     ///   - value: A JSON value.
     ///   - assignments: A collection of key/value pairs, where keys are
     ///     [JSON paths](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonInsert<C>(
         _ value: some SQLExpressible,
         _ assignments: C)
@@ -568,6 +620,7 @@ extension Database {
     ///   - value: A JSON value.
     ///   - assignments: A collection of key/value pairs, where keys are
     ///     [JSON paths](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonReplace<C>(
         _ value: some SQLExpressible,
         _ assignments: C)
@@ -595,6 +648,7 @@ extension Database {
     ///   - value: A JSON value.
     ///   - assignments: A collection of key/value pairs, where keys are
     ///     [JSON paths](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonSet<C>(
         _ value: some SQLExpressible,
         _ assignments: C)
@@ -630,6 +684,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jobj>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonObject<C>(_ elements: C)
     -> SQLExpression
     where C: Collection,
@@ -650,6 +705,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jpatch>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonPatch(
         _ value: some SQLExpressible,
         with patch: some SQLExpressible)
@@ -672,6 +728,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON value.
     ///   - paths: A [JSON path](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonRemove(_ value: some SQLExpressible, atPath path: some SQLExpressible) -> SQLExpression {
         .function("JSON_REMOVE", [value.sqlExpression, path.sqlExpression])
     }
@@ -690,6 +747,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON value.
     ///   - paths: A collection of [JSON paths](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonRemove<C>(_ value: some SQLExpressible, atPaths paths: C)
     -> SQLExpression
     where C: Collection, C.Element: SQLExpressible
@@ -707,6 +765,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jtype>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonType(_ value: some SQLExpressible) -> SQLExpression {
         .function("JSON_TYPE", [value.sqlExpression])
     }
@@ -725,6 +784,7 @@ extension Database {
     /// - Parameters:
     ///   - value: A JSON value.
     ///   - paths: A [JSON path](https://www.sqlite.org/json1.html#path_arguments).
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonType(_ value: some SQLExpressible, atPath path: some SQLExpressible) -> SQLExpression {
         .function("JSON_TYPE", [value.sqlExpression, path.sqlExpression])
     }
@@ -739,6 +799,7 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jvalid>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonIsValid(_ value: some SQLExpressible) -> SQLExpression {
         .function("JSON_VALID", [value.sqlExpression])
     }
@@ -756,22 +817,65 @@ extension Database {
     /// ```
     ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jquote>
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
     public static func jsonQuote(_ value: some SQLExpressible) -> SQLExpression {
         .function("JSON_QUOTE", [value.sqlExpression.jsonBuilderExpression])
     }
     
     /// The `JSON_GROUP_ARRAY` SQL function.
     ///
+    /// For example:
+    ///
+    /// ```swift
+    /// // SELECT JSON_GROUP_ARRAY(name) FROM player
+    /// Player.select(Database.jsonGroupArray(Column("name")))
+    ///
+    /// // SELECT JSON_GROUP_ARRAY(name) FILTER (WHERE score > 0) FROM player
+    /// Player.select(Database.jsonGroupArray(Column("name"), filter: Column("score") > 0))
+    /// ```
+    ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jgrouparray>
-    public static func jsonGroupArray(_ value: some SQLExpressible) -> SQLExpression {
-        .function("JSON_GROUP_ARRAY", [value.sqlExpression.jsonBuilderExpression])
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
+    public static func jsonGroupArray(
+        _ value: some SQLExpressible,
+        filter: (any SQLSpecificExpressible)? = nil)
+    -> SQLExpression {
+        .aggregateFunction(
+            "JSON_GROUP_ARRAY",
+            [value.sqlExpression.jsonBuilderExpression],
+            filter: filter?.sqlExpression,
+            isJSONValue: true)
     }
     
     /// The `JSON_GROUP_OBJECT` SQL function.
     ///
+    /// For example:
+    ///
+    /// ```swift
+    /// // SELECT JSON_GROUP_OBJECT(name, score) FROM player
+    /// Player.select(Database.jsonGroupObject(
+    ///     key: Column("name"),
+    ///     value: Column("score")))
+    ///
+    /// // SELECT JSON_GROUP_OBJECT(name, score) FILTER (WHERE score > 0) FROM player
+    /// Player.select(Database.jsonGroupObject(
+    ///     key: Column("name"),
+    ///     value: Column("score"),
+    ///     filter: Column("score") > 0))
+    /// ```
+    ///
     /// Related SQLite documentation: <https://www.sqlite.org/json1.html#jgrouparray>
-    public static func jsonGroupObject(key: some SQLExpressible, value: some SQLExpressible) -> SQLExpression {
-        .function("JSON_GROUP_OBJECT", [key.sqlExpression, value.sqlExpression.jsonBuilderExpression])
+    @available(iOS 16, macOS 10.15, tvOS 17, watchOS 9, *) // SQLite 3.38+ with exceptions for macOS
+    public static func jsonGroupObject(
+        key: some SQLExpressible,
+        value: some SQLExpressible,
+        filter: (any SQLSpecificExpressible)? = nil
+    ) -> SQLExpression {
+        .aggregateFunction(
+            "JSON_GROUP_OBJECT",
+            [key.sqlExpression, value.sqlExpression.jsonBuilderExpression],
+            filter: filter?.sqlExpression,
+            isJSONValue: true)
     }
 }
 #endif

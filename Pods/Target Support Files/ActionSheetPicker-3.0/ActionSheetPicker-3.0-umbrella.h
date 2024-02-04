@@ -17,8 +17,8 @@
 #import "ActionSheetDistancePicker.h"
 #import "ActionSheetLocalePicker.h"
 #import "ActionSheetMultipleStringPicker.h"
-#import "ActionSheetPicker.h"
 #import "ActionSheetStringPicker.h"
+#import "CoreActionSheetPicker.h"
 #import "DistancePickerView.h"
 #import "SWActionSheet.h"
 

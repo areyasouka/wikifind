@@ -15,7 +15,7 @@
     <a href="https://github.com/groue/GRDB.swift/actions/workflows/CI.yml"><img alt="CI Status" src="https://github.com/groue/GRDB.swift/actions/workflows/CI.yml/badge.svg?branch=master"></a>
 </p>
 
-**Latest release**: October 4, 2023 • [version 6.19.0](https://github.com/groue/GRDB.swift/tree/v6.19.0) • [CHANGELOG](CHANGELOG.md) • [Migrating From GRDB 5 to GRDB 6](Documentation/GRDB6MigrationGuide.md)
+**Latest release**: January 6, 2024 • [version 6.24.1](https://github.com/groue/GRDB.swift/tree/v6.24.1) • [CHANGELOG](CHANGELOG.md) • [Migrating From GRDB 5 to GRDB 6](Documentation/GRDB6MigrationGuide.md)
 
 **Requirements**: iOS 11.0+ / macOS 10.13+ / tvOS 11.0+ / watchOS 4.0+ &bull; SQLite 3.19.3+ &bull; Swift 5.7+ / Xcode 14+
 
@@ -310,7 +310,6 @@ Documentation
 #### Good to Know
 
 - [Concurrency]: How to access databases in a multi-threaded application.
-- [SwiftUI](https://github.com/groue/GRDBQuery): Access and observe the database from your SwiftUI views.
 - [Combine](Documentation/Combine.md): Access and observe the database with Combine publishers.
 - [Avoiding SQL Injection](#avoiding-sql-injection)
 - [Error Handling](#error-handling)
@@ -320,6 +319,11 @@ Documentation
 - :bulb: [Migrating From GRDB 5 to GRDB 6](Documentation/GRDB6MigrationGuide.md)
 - :bulb: [Why Adopt GRDB?](Documentation/WhyAdoptGRDB.md)
 - :bulb: [Recommended Practices for Designing Record Types](https://swiftpackageindex.com/groue/grdb.swift/documentation/grdb/recordrecommendedpractices)
+
+#### Companion Libraries
+
+- [GRDBQuery](https://github.com/groue/GRDBQuery): Access and observe the database from your SwiftUI views.
+- [GRDBSnapshotTesting](https://github.com/groue/GRDBSnapshotTesting): Test your database. 
 
 **[FAQ]**
 
